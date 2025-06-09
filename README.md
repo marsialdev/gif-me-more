@@ -1,4 +1,4 @@
-# GifMeMore + TypeScript
+# GifMeMore
 
 Discover trending GIFs in a fast and dynamic interface built with **React**, **TypeScript**, and **TailwindCSS**.
 
