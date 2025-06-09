@@ -33,8 +33,7 @@ export const useGifCategoryForm = (
       setLoading(true);
 
       const gifs = await getGifsLimit(newCategory);
-      const hasGifs = gifs.length > 0;
-      if (!hasGifs) {
+      if (gifs.length < 1) {
         toast.error('Results not found');
         setInputValue('');
         return;

@@ -3,7 +3,7 @@ import { Gif } from '../types/gif.types';
 
 const API_KEY = import.meta.env.VITE_GIPHY_API_KEY;
 
-export const getGifsLimit = async (category: Category): Promise<Gif> => {
+export const getGifsLimit = async (category: Category): Promise<Gif[]> => {
   if (!API_KEY) {
     throw new Error('Missing Giphy API key in environment variables.');
   }
