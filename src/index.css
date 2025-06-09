@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-dark: oklch(0.18 0.0238 268.25);
+  --color-dark-100: oklch(0.11 0.0238 268.25);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-dark-100);
+    color: var(--color-gray-300);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: var(--color-white);
+    font-weight: var(--font-weight-bold);
+  }
+}
