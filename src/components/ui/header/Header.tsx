@@ -5,7 +5,7 @@ interface HeaderProps {
 }
 
 export const Header = ({ children }: HeaderProps) => {
-  const logoImage = `${import.meta.env.BASE_URL}images/logo.png`;
+  const logoImage = `${import.meta.env.BASE_URL}img/logo.png`;
   return (
     <header className="flex flex-col justify-center items-center gap-5 mb-12 md:mb-13">
       <div className="w-1/2 md:w-1/4">
